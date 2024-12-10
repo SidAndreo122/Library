@@ -18,7 +18,20 @@ button {
 #output-caption-container {
     text-align: center;
 }
-
+dialog {
+    background-image: url(https://media.istockphoto.com/id/643578396/photo/piece-of-paper.jpg?s=612x612&w=0&k=20&c=ZMngNo8_LgTRVhs2QqNES9GzkHJXp79_sXDIV7EAFbE=);
+    background-position: center;
+    background-size: cover;
+}
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0.8;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 * {
     box-sizing: border-box;
     margin: 0;

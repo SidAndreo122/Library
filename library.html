@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="library.css">
-    <script src="library.js"></script>
+    <script src="odinlibrary.js" defer></script>
 </head>
 <body>
     <h1>Library</h1>
@@ -18,5 +18,40 @@
     <div id="output-caption-container">
         Book Information
     </div>
+    <dialog>
+        <form action="" method="get" id="addBookForm">
+            <div class="container">
+                <div id="closeBtn-Container">
+                    <button id="closeBtn" autofocus>X</button>
+                </div>
+                <header class="addBookHeader">
+                    <h2>Add Book to Library</h2>
+                </header>
+                <div class="formTitleContainer">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" placeholder="The Witcher"
+                    minlength="2" maxlength="40" size="15">
+                </div>
+                <div class="formAuthorContainer">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" placeholder="Author"
+                    minlength="2" maxlength="30" size="15">
+                </div>
+                <div class="formPagesContainer">
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" name="pages" placeholder="42"
+                    min="1" max="10000" size="15">
+                </div>
+                <div class="formReadContainer">
+                    <label for="read" class="checkbox-read">Read?</label>
+                    <input type="checkbox" id="read" name="read" value="false">
+                </div>
+                <div class="submitBtnContainer">
+                    <button type="submit" id="submitBtn">Add</button>
+                </div>
+            </div>
+            
+        </form>
+    </dialog>
 </body>
 </html>
