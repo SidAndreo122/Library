@@ -17,6 +17,8 @@ button {
 }
 #output-caption-container {
     text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
 }
 dialog {
     background-image: url(https://media.istockphoto.com/id/643578396/photo/piece-of-paper.jpg?s=612x612&w=0&k=20&c=ZMngNo8_LgTRVhs2QqNES9GzkHJXp79_sXDIV7EAFbE=);
@@ -31,6 +33,57 @@ dialog::backdrop {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.container > div {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+#closeBtn-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.submitBtnContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+.grid-book-container {
+    display: grid;
+    grid-template: 300px 300px / 240px 240px 240px;
+    gap: 100px;
+    justify-content: center;
+}
+.grid-book {
+    background-image: url(https://i.pinimg.com/236x/46/91/27/469127ec4e81b9c90fc76de8630d7819.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.generated-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-number-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.generated-book-title {
+    font-style: italic;
+}
+.generated-have-read {
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+.generated-delete-button {
+    padding: 10px;
+    margin-top: 60px;
+    color: red;
+    
 }
 * {
     box-sizing: border-box;
